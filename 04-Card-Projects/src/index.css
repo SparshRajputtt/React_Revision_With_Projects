@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'helvetica neue', sans-serif;
-  color: #fff;
+  /* color: #fff; */
 }
 
 html,
@@ -14,7 +14,109 @@ body {
 }
 
 .parent{
-  height: 100vh;
-  width: 100%;
+  max-width: 100%;
   background-color: #111;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.card{
+  height: 325px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card .top img{
+  height: 40px;
+  width: 40px;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.card .top button{
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #8b8b8b;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card .center h3{
+  font-size: 17px;
+  font-weight: 500px;
+}
+
+.card .center h3 span{
+  font-size: 9px;
+  font-weight: 400px;
+  color: #8b8b8b;
+}
+
+.card .center h2{
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.card .center .tag{
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.card .center .tag h4{
+  font-size: 12px;
+  background-color: #dadada;
+  color: #111;
+  font-weight: 500px;
+  padding: 3px 7px;
+  border-radius: 8px;
+}
+
+.card .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1.5px solid #dadadad7;
+  padding-top: 15px;
+}
+
+.card .bottom button{
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600px;
+}
+
+.card .bottom h3{
+  font-size: 19px;
+  font-weight: 500px;
+}
+
+.card .bottom p{
+  font-size: 11px;
+  color: #8b8b8b;
 }

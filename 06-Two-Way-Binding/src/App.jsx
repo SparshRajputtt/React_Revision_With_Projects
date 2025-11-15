@@ -7,6 +7,7 @@ function App() {
   const submitHandler = (e) => {
     e.preventDefault();
     console.log("Form Submitted");
+    setName("");
   }
 
   return (
